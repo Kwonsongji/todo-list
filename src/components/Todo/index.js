@@ -28,12 +28,25 @@ const Todo = () => {
   console.log('todo', todos);
   console.log('nbre d élement du array',todos.length);
   return (
-    <div CL>
+    <div className="container">
       <h1 className="text-center">{todos.length} To-do</h1>
-      <ul>
+      <ul className="list-group">
         {myTodos}
       </ul>
+
+<form action="">
+  <div className="form-group">
+    <div class="card">
+      <div class="card-body">
+        <label>Ajouter une tâche </label>
+        <input className="form-control" type="text"/> 
+        <button type="submit" className="btn btn-success"  > Valider </button> 
     </div>
+    </div>
+  </div>
+</form>
+      
+  </div>
   )
 }
 
